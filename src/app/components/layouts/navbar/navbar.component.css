@@ -1,0 +1,130 @@
+/*================== Globals ==================*/
+.text-para {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+.primary-text {
+  color: white;
+}
+.secondary-text {
+  color: #797979;
+}
+.custom-size-icon {
+  font-size: 2.5rem;
+  color: #797979;
+}
+.nav-burger {
+  color: white;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
+mat-divider {
+  color: white;
+  border: 1px groove;
+}
+/*================== Globals ==================*/
+
+/*================== Navbar ==================*/
+.custom-navbar {
+  background-color: rgb(10, 62, 121);
+  position: relative;
+  justify-content: center;
+  height: 10rem;
+}
+.nav-item-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-list-item-info {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.second-nav .nav-list {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: row;
+}
+.second-nav .nav-list .nav-list-item {
+  display: flex;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.second-nav .nav-list .nav-list-item:hover {
+  color: #797979;
+}
+.second-nav .nav-list .nav-list-item::before {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  background-color: #f8b653;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+.second-nav .nav-list .nav-list-item:hover::before {
+  width: 100%;
+}
+.nav-layout {
+  display: flex;
+  flex-direction: column;
+}
+.nav-spacer {
+  flex: 1 1 auto;
+}
+.button:focus {
+  outline: none;
+}
+.nav-hidden-item,
+.nav-hidden-item-onpress {
+  display: none;
+}
+.nav-hidden-item-onpress {
+  position: absolute;
+  margin: 0;
+  left: 0%;
+  width: 100%;
+  top: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.nav-hidden-item-onpress ul {
+  list-style-type: none;
+  justify-content: center;
+}
+/*================== Navbar ==================*/
+
+/*================== Responsive ==================*/
+@media only screen and (max-width: 900px) {
+  .nav-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-logo {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .custom-navbar {
+    height: 18rem;
+  }
+  .nav-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-list-item-info {
+    flex-direction: column;
+  }
+  .nav-hidden-item {
+    display: block;
+  }
+  .second-nav {
+    display: none !important;
+  }
+}

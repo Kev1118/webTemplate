@@ -1,0 +1,192 @@
+<div class="home-section">
+   <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" class="img-carousel" class="img-fluid" alt="Random first slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" class="img-carousel" class="img-fluid" alt="Random second slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2]" class="img-carousel" class="img-fluid" alt="Random third slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="home-slogan-container">
+  <div class="container">
+    <div class="row custom-row">
+      <div class="col-lg-6 col-md-12 home-slogan">
+        <div>
+          <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum similique repellendus ipsam, illo voluptates ut!</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 d-flex">
+        <div>
+          <button class="button primary-button mr-3">GET A QUOTE</button>
+          <button class="button secondary-button">CHECK OUR PROJECTS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <mat-card>
+          <img mat-card-image src="assets/images/no-image.jpg" class="img-fluid" alt="card-img">
+          <mat-card-content>
+            <h4><b>Title</b></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illo corporis reprehenderit recusandae numquam magnam voluptatum, optio in ab id dolores. Officiis quae consequuntur quas.</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button class="read-more-button">Read More</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <mat-card>
+          <img mat-card-image src="assets/images/no-image.jpg" class="img-fluid" alt="card-img">
+          <mat-card-content>
+            <h4><b>Title</b></h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur et est maiores animi perspiciatis sunt accusantium tempora ratione, voluptates impedit harum dolor iure, consequuntur magni illum delectus expedita voluptatum? Magnam?</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button class="read-more-button">Read More</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div>
+          <ul class="p-0">
+            <li class="d-flex flex-row mb-3">
+              <div class="mr-2">
+                <img src="assets/images/no-image.jpg" class="img-fluid" alt="sample-project">
+              </div>
+              <div>
+                <h4 class="m-0"><b>Title</b></h4>
+                <p class="m-0 work-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+
+            <li class="d-flex flex-row mb-3">
+              <div class="mr-2">
+                <img src="assets/images/no-image.jpg" class="img-fluid" alt="sample-project">
+              </div>
+              <div>
+                <h4 class="m-0"><b>Title</b></h4>
+                <p class="m-0 work-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+
+            <li class="d-flex flex-row mb-3">
+              <div class="mr-2">
+                <img src="assets/images/no-image.jpg" class="img-fluid" alt="sample-project">
+              </div>
+              <div>
+                <h4 class="m-0"><b>Title</b></h4>
+                <p class="m-0 work-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+
+            <li class="d-flex flex-row mb-3">
+              <div class="mr-2">
+                <img src="assets/images/no-image.jpg" class="img-fluid" alt="sample-project">
+              </div>
+              <div>
+                <h4 class="m-0"><b>Title</b></h4>
+                <p class="m-0 work-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------Work Section---------------->
+<div class="work-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="work-link-section">
+          <ul class="work-links">
+            <li><span>ALL PROJECTS</span> </li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+            <li><span>Project Link</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-lg-12">
+        <div class="container">
+          <ng-image-slider [images]="imageObject" [infinite]="true" slideImage="1">
+          </ng-image-slider>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------------------About Company----------------------------->
+<div class="about-section mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="about-title">
+          <h1 class="about-title-text">Why Choose Us</h1>
+        </div>
+        <article>
+          <div class="d-flex mt-3 mb-3">
+            <span class="material-icons primary-color">check</span>
+            <h3 class="article-title"> ABOUT TITLE</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reiciendis ipsam voluptas cumque velit. Fugiat aspernatur error dolor autem numquam molestias iure aliquid enim beatae libero ex, cum quas quidem deserunt soluta veritatis nisi rerum harum quis blanditiis, laudantium eius!</p>
+        </article>
+        <article>
+          <div class="d-flex mt-3 mb-3">
+            <span class="material-icons primary-color">check</span>
+            <h3 class="article-title"> ABOUT TITLE</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aliquam hic dolores! Obcaecati amet in nemo quos adipisci voluptatum, minima iure, beatae veniam quisquam eveniet sunt. Molestiae, dolor ea recusandae dignissimos officia facere tempore quis ipsam dolores tempora ullam rerum cum corporis earum, fugiat perspiciatis!</p>
+        </article>
+        <article>
+          <div class="d-flex mt-3 mb-3">
+            <span class="material-icons primary-color">check</span>
+            <h3 class="article-title"> ABOUT TITLE</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita blanditiis, excepturi placeat nihil minus delectus eos tempora velit atque maiores alias inventore hic dolorem architecto nobis illo et non animi natus dignissimos perferendis. Natus perferendis in aliquid corporis illum praesentium consectetur totam voluptate optio, error quod maiores, quis possimus eos!</p>
+        </article>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="about-title">
+          <h1 class="about-title-text">Who We Are?</h1>
+        </div>
+        <div class="d-flex flex-row mt-3">
+          <div class="d-flex flex-column ">
+            <img src="assets/images/no-image.jpg" class="mb-3 img-fluid" alt="about-img">
+            <img src="assets/images/no-image.jpg" class="img-fluid" alt="about-img">
+          </div>
+          <div>
+            <p class="ml-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum ipsum molestiae debitis, similique ipsam commodi et quasi perferendis possimus consectetur fugit incidunt nam velit ut at quod blanditiis eum soluta repudiandae aliquid voluptatem! Incidunt nihil dolore minima itaque, fugit voluptas impedit vitae tempora, alias nulla assumenda voluptate perferendis cum, nemo expedita corporis nesciunt delectus officia dolor exercitationem ullam neque aliquam quod. Sed libero unde velit nobis? Dolorum at repellendus aliquam accusantium fugiat facere enim aspernatur explicabo. Vero recusandae voluptates tenetur.</p>
+            <button mat-button class="read-more-button">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-testimonials></app-testimonials>

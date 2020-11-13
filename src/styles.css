@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.primary-color {
+  color: #f3b632;
+}
+.button {
+  padding: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.1rem;
+}
+.primary-button {
+  background-color: #f3b632;
+  color: black;
+}
+.secondary-button {
+  color: #b9b9b9;
+  border: 0.2rem solid #b9b9b9 !important;
+}
+.primary-button:hover {
+  background-color: #ca9728;
+  transition: all ease-in-out 250ms;
+}
+.secondary-button:hover {
+  border: 0.2rem solid #8b8b8b !important;
+  color: black;
+  transition: all ease-in 250ms;
+}
+.read-more-button {
+  color: #1fa7da;
+}
